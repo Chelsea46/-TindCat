@@ -156,5 +156,10 @@ button{
     top: 16%;
     left: 25%;
   }
+}
 
+@media (min-width:300px) and (max-width: 800px){
+  #card .cat-img{
+    height: 474px;
+  }
 }
