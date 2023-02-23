@@ -1,0 +1,160 @@
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav{
+  margin: 1em;
+  margin-right: 2.5em;
+}
+
+#paw{
+  border: 1px solid red;
+  padding: .3em 1.5em .3em 1.5em;
+  border-radius: 38%;
+  background-image: linear-gradient(to bottom right, #F83375, #FA695A);
+  color: white;
+}
+
+#user, #comment{
+  color: #DCE1E7;
+}
+
+#card .cat-img {
+    width: 100%;
+    height: 650px;
+    border-radius: 10px;
+}
+
+#card {
+    position: relative;
+    width: 95%;
+    margin: auto;
+}
+
+.cat-info {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 10px;
+}
+
+.fa-heart{
+  color:#71E5C1;
+}
+
+.fa-x{
+  color: #E74D62;
+}
+
+.actions{
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.reject{
+  margin-right: 1.5em;
+  padding: 1.5em;
+}
+
+.reject:hover{
+  background-color: #FAE7EF;
+}
+
+.accept{
+  padding: 1.5em;
+}
+
+.accept:hover{
+  background-color: #D9FEF5;
+}
+
+button{
+  border-radius: 50% !important;
+  border: none;
+  background-color: white;
+  box-shadow: 2px 6px 20px 0px rgba(0,0,0,0.47);
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.selected{
+    border: 1px solid red;
+    width: 103px;
+    text-align: center;
+    margin: 0.5em;
+    border-width: 0.15em;
+    border-radius: 6px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 12%;
+    left: 0%;
+}
+
+#liked {
+  background-image: linear-gradient(45deg, #6EF2F2, #29D78A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image:  linear-gradient(45deg, #6EF2F2, #29D78A) 1;
+  z-index: 1;
+  display: none;
+}
+
+#disliked {
+  background-image: linear-gradient(45deg, #E63471, #E9635B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image:  linear-gradient(45deg, #E63471, #E9635B) 1;
+  display: none;
+  z-index: 1;
+}
+
+
+@media (min-width: 800px) {
+  #card{
+    width: 60%;
+  }
+  nav{
+    margin-right: 12em;
+    margin-left: 11em;
+  }
+  .selected{
+    top: 15%;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1000px){
+  nav{
+    margin-right: 17em;
+    margin-left: 15em;
+  }
+  .selected{
+    top: 14%;
+    left: 20%;
+    width: 13%;
+  }
+}
+
+@media (min-width: 1200px) {
+   #card{
+    width: 50%;
+  }
+  nav{
+    margin-right: 25em;
+    margin-left: 24em;
+  }
+  .selected{
+    top: 16%;
+    left: 25%;
+  }
+
+}
